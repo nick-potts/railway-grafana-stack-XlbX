@@ -17,3 +17,7 @@ scrape_configs:
   - job_name: 'php-fpm'
     static_configs:
       - targets: ['php-fpm_exporter.railway.internal:9253']
+
+  - job_name: 'nginx'
+    static_configs:
+      - targets: ['nginx-prometheus-exporter.railway.internal:9113']
